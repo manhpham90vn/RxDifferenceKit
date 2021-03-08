@@ -20,7 +20,7 @@ struct Section {
 }
 
 extension Section: DifferentiableSection {
-    init<C>(source: Section, elements: C) where C: Collection, C.Element == Liner {
+    init<C>(source: Section, elements: C) where C: Swift.Collection, C.Element == Liner {
         self.init(label: source.label, elements: elements as! [Liner])
     }
 
